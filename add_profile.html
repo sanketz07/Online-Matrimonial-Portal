@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Wedding &mdash; </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+<style>
+
+/* Style the input fields */
+input {
+  
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px  #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: crimson;
+}</style>
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation" style="background-color:crimson;" data-stellar-background-ratio="0.5" >
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.com</strong></a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+						<ul>
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="story.html">Story</a></li>
+								<li class="has-dropdown">
+									<a href="gallery.html">Gallery</a>
+								</li>
+								<li><a href="contact.html">Contact</a></li>
+								<li class="has-dropdown">
+									<a href="#">Login</a>
+									<ul class="dropdown">
+										<li><a href="login.html">Log in</a></li>
+										<li><a href="registration.html">Sign up</a></li>
+									</ul>
+								</li>
+							</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+
+	
+
+	<div id="fh5co-couple" class="">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center animate-box">
+					<br><br><br>
+					<h1>Let’s create your Profile now</h1> <br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6"></div>
+				<div class="col-md-6 col-sm-6">
+					<form id="regForm" action="save_profile.php" method="POST" class="was-validated">
+						<div class="tab">
+							<b>Full Name</b>
+							<p><input type="text" placeholder="Enter Full Name" class="form-control" name="name" oninput="this.className = ''" required></p>
+							<b>Contact No.</b>
+							<p><input type="number" placeholder="Contact No." class="form-control" name="contact" oninput="this.className = ''" required></p>
+							<b>Email</b>
+							<p><input type="email" placeholder="Enter Email" class="form-control" name="email" oninput="this.className = ''" required></p>
+							<b>Age</b>
+							<p><input type="number" placeholder="Enter Age" class="form-control" name="age" oninput="this.className = ''" required></p>
+							<p><b>Gender</b>
+								<select class="form-control" name="gender" required>
+									<option>Male</option>
+									<option>Female</option>
+								</select>
+							</p>
+							<b>City you live in?</b>
+							<p><input placeholder="City Name" class="form-control" name="city" oninput="this.className = ''" required></p>
+							<b>State you live in?</b>
+							<p><input  placeholder="State" class="form-control" name="state" oninput="this.className = ''" required></p>
+							
+						</div>
+						<div class="tab">
+							
+							<p><b>You live with your family?</b>
+								<select class="form-control" name="withfamily" required>
+									<option>Yes</option>
+									<option>No</option>
+								</select>
+							</p>
+							<p><b>Your marital status</b>
+								<select class="form-control" name="maritalstatus" required>
+									<option>Never married</option>
+									<option>Divorced</option>
+									<option>Widowed</option>
+									<option>Awaiting divorce</option>
+									<option>Annulled</option>
+								</select>
+							</p>
+							<p><b>Do you have any children?</b>
+								<select class="form-control" name="child" required>
+									<option>No</option>
+									<option>Yes. Living togather</option>
+									<option>Yes. Not living togather</option>
+								</select>
+							</p>
+							<p><b>Your diet</b>
+								<select class="form-control" name="diet" required>
+									<option>Veg</option>
+									<option>Non-veg</option>
+									<option>Ocassionally Non-veg</option>
+									<option>Eggetarian</option>
+									<option>Vegan</option>
+								</select>
+							</p>
+							<p><b>Your height</b>
+								<select class="form-control" name="height" required>
+									<option>4ft 5in - 134cm</option>
+									<option>4ft 6in - 137cm</option>
+									<option>4ft 7in - 139cm</option>
+									<option>4ft 8in - 142cm</option>
+									<option>4ft 9in - 144cm</option>
+									<option>4ft 10in - 147cm</option>
+									<option>4ft 11in - 149cm</option>
+									<option>5ft - 152cm</option>
+									<option>5ft 1in - 154cm</option>
+									<option>5ft 2in - 157cm</option>
+									<option>5ft 3in - 160cm</option>
+									<option>5ft 4in - 162cm</option>
+									<option>5ft 5in - 165cm</option>
+									<option>5ft 6in - 167cm</option>
+									<option>5ft 7in - 170cm</option>
+									<option>5ft 8in - 172cm</option>
+									<option>5ft 9in - 175cm</option>
+									<option>5ft 10in - 177cm</option>
+									<option>5ft 11in - 180cm</option>
+									<option>6ft - 182cm</option>
+									<option>6ft 1in - 185cm</option>
+									<option>6ft 2in - 187cm</option>
+									<option>6ft 3in - 190cm</option>
+									<option>6ft 4in - 193cm</option>
+									<option>6ft 5in - 195cm</option>
+									<option>6ft 6in - 198cm</option>
+									<option>6ft 7in - 200cm</option>
+									<option>6ft 8in - 203cm</option>
+									<option>6ft 9in - 205cm</option>
+									<option>6ft 10in - 208cm</option>
+									<option>6ft 11in - 210cm</option>
+									<option>7ft - 213cm</option>
+								</select>
+							</p>
+							<b>Weight</b>
+							<p><input  placeholder="Weight in Kg." class="form-control" name="weight" oninput="this.className = ''" required></p>
+							<p><b>Religion</b>
+								<select class="form-control" name="religion" required>
+									<option>Hindu</option>
+								</select>
+							</p>
+							<p><b>Community</b>
+								<select class="form-control" name="community" required>
+									<option>Arunachali</option>
+									<option>Assamese</option>
+									<option>Awadhi</option>
+									<option>Baluchi</option>
+									<option>Bengali</option>
+									<option>Bhojpuri</option>
+									<option>Bhutia</option>
+									<option>Brij</option>
+									<option>Burmese</option>
+									<option>Chattisgarhi</option>
+									<option>Chinese</option>
+									<option>Coorgi</option>
+									<option>Dogri</option>
+									<option>English</option>
+									<option>French</option>
+									<option>Garhwali</option>
+									<option>Garo</option>
+									<option>Gujrati</option>
+									<option>Haryanavi</option>
+									<option>Himachali/Pahari</option>
+									<option>Hindi</option>
+									<option>Hindko</option>
+									<option>Kakbarak</option>
+									<option>Kanauji</option>
+									<option>Kannada</option>
+									<option>Kashmiri</option>
+									<option>Khandesi</option>
+									<option>Khasi</option>
+									<option>Konkani</option>
+									<option>Koshali</option>
+									<option>Kumaoni</option>
+									<option>Kutchi</option>
+									<option>Ladakhi</option>
+									<option>Lepcha</option>
+									<option>Magahi</option>
+									<option>Maithili</option>
+									<option>Malay</option>
+									<option>Malayalam</option>
+									<option>Manipuri</option>
+									<option>Marathi</option>
+									<option>Marwari</option>
+									<option>Miji</option>
+									<option>Mizo</option>
+									<option>Monpa</option>
+									<option>Nepali</option>
+									<option>Odia</option>
+									<option>Pashto</option>
+									<option>Persian</option>
+									<option>Punjabi</option>
+									<option>Rajasthani</option>
+									<option>Russian</option>
+									<option>Sanskrit</option>
+									<option>Santhali</option>
+									<option>Seraiki</option>
+									<option>Sourashtra</option>
+									<option>Spanish</option>
+									<option>Swedish</option>
+									<option>Tagalog</option>
+									<option>Tamil</option>
+									<option>Telugu</option>
+									<option>Tulu</option>
+									<option>Urdu</option>
+									<option>Other</option>
+								</select>
+							</p>
+							<p><b>Sub-community</b>
+								<select class="form-control" name="subcommunity" required>
+									<option>Brahmbatt</option>
+									<option>Brahmin-Anavil</option>
+									<option>Brahmin-Audichya</option>
+									<option>Brahmin-Barendra</option>
+									<option>Brahmin-Bhatt</option>
+									<option>Brahmin-Bhumihar</option>
+									<option>Brahmin-Brahmbhatt</option>
+									<option>Brahmin-Dadhich/Dadheech</option>
+									<option>Brahmin-Daivadnya</option>
+									<option>Brahmin-Danua</option>
+									<option>Brahmin-Deshastha</option>
+									<option>Brahmin-Dhiman</option>
+									<option>Brahmin-Dravida</option>
+									<option>Brahmin-Embrandiri</option>
+									<option>Brahmin-Goswami</option>
+									<option>Brahmin-Gour</option>
+									<option>Brahmin-Gowd Saraswat</option>
+									<option>Brahmin-Gujar Gour</option>
+									<option>Brahmin-Gurukkal</option>
+									<option>Brahmin-Halua</option>
+									<option>Brahmin-Havyaka</option>
+									<option>Brahmin-Himachali</option>
+									<option>Brahmin-Hoysala</option>
+									<option>Brahmin-Iyengar</option>
+									<option>Brahmin-Iyer</option>
+									<option>Brahmin-Jangid</option>
+									<option>Brahmin-Jhadua</option>
+									<option>Brahmin-Jhijhotiya</option>
+									<option>Brahmin-Kanyakubja</option>
+									<option>Brahmin-Karhade</option>
+									<option>Brahmin-Kashmiri Pandit</option>
+									<option>Brahmin-Kokanastha</option>
+									<option>Brahmin-Kota</option>
+									<option>Brahmin-Kulin</option>
+									<option>Brahmin-Kumaoni</option>
+									<option>Brahmin-Madhwa</option>
+									<option>Brahmin-Maithili</option>
+									<option>Brahmin-Modh</option>
+									<option>Brahmin-Mohyal</option>
+									<option>Brahmin-Nagar</option>
+									<option>Brahmin-Namboodiri</option>
+									<option>Brahmin-Niyogi</option>
+									<option>Brahmin-Niyogi Nandavariki</option>
+									<option>Brahmin-Other</option>
+									<option>Brahmin-Paliwal</option>
+									<option>Brahmin-Panda</option>
+									<option>Brahmin-Pareek</option>
+									<option>Brahmin-Pushkarna</option>
+									<option>Brahmin-Rarhi</option>
+									<option>Brahmin-Rudraj</option>
+									<option>Brahmin-Sakaldwipi</option>
+									<option>Brahmin-Sanadya</option>
+									<option>Brahmin-Sanketi</option>
+									<option>Brahmin-Saraswat</option>
+									<option>Brahmin-Sarua</option>
+									<option>Brahmin-Saryuparin</option>
+									<option>Brahmin-Shivhalli</option>
+									<option>Brahmin-Shrimali</option>
+									<option>Brahmin-Smartha</option>
+									<option>Brahmin-Sri Vaishnava</option>
+									<option>Brahmin-Stanika</option>
+									<option>Brahmin-Tyagi</option>
+									<option>Brahmin-Vaidiki</option>
+									<option>Brahmin-Vaikhanasa</option>
+									<option>Brahmin-Velandu</option>
+									<option>Brahmin-Viswabrahmin</option>
+									<option>Brahmin-Vyas</option>
+									<option>Brahmo</option>
+								</select>
+							</p>
+						</div>
+						
+						<div class="tab">
+							<p><b>Your highest qualification</b>
+								<select class="form-control" name="qualification" required>
+									<option>B.E/B.Tech</option>
+									<option>M.E/M.Tech</option>
+									<option>M.S Engineering</option>
+									<option>B.Eng (Hons)</option>
+									<option>M.Eng (Hons)</option>
+									<option>Engineering Diploma</option>
+									<option>AE</option>
+									<option>AET</option>
+									<option>B.A</option>
+									<option>B.Ed</option>
+									<option>BJMC</option>
+									<option>BFA</option>
+									<option>B.Arch</option>
+									<option>B.Des</option>
+									<option>BMM</option>
+									<option>MFA</option>
+									<option>M.Ed</option>
+									<option>M.A</option>
+									<option>MSW</option>
+									<option>MJMC</option>
+									<option>M.Arch</option>
+									<option>M.Des</option>
+									<option>B.A (Hons)</option>
+									<option>B.Arch (Hons)</option>
+									<option>DFA</option>
+									<option>D.Ed</option>
+									<option>D.Arch</option>
+									<option>AA</option>
+									<option>AFA</option>
+									<option>B.Com</option>
+									<option>CA/CPA</option>
+									<option>CFA</option>
+									<option>CS</option>
+									<option>BSc/BFin</option>
+									<option>M.Com</option>
+									<option>MSc/MFin/MS</option>
+									<option>B.Com (Hons)</option>
+									<option>PGD Finance</option>
+									<option>BCA</option>
+									<option>B.IT</option>
+									<option>BCS</option>
+									<option>BA Computer Science</option>
+									<option>MCS</option>
+									<option>PGDCA</option>
+									<option>IT Diploma</option>
+									<option>ADIT</option>
+									<option>B.Sc</option>
+									<option>M.Sc</option>
+									<option>B.Sc (Hons)</option>
+									<option>DipSc</option>
+									<option>AS</option>
+									<option>AAS</option>
+									<option>MBBS</option>
+									<option>BDS</option>
+									<option>BPT</option>
+									<option>BAMS</option>
+									<option>BHMS</option>
+									<option>B.Pharma</option>
+									<option>BVSc</option>
+									<option>BSN/BScN</option>
+									<option>MDS</option>
+									<option>MCh</option>
+									<option>M.S Medicine</option>
+									<option>MPT</option>
+									<option>DM</option>
+									<option>D.Pharma</option>
+									<option>MVSc</option>
+									<option>MMed</option>
+									<option>PGD Medicine</option>
+									<option>ADN</option>
+									<option>BBA</option>
+									<option>BHM</option>
+									<option>BBA</option>
+									<option>MBA</option>
+									<option>PGDM</option>
+									<option>ABA</option>
+									<option>ADBus</option>
+									<option>BL/LLB</option>
+									<option>ML/LLM</option>
+									<option>LLB (Hons)</option>
+									<option>ALA</option>
+									<option>Ph.D</option>
+									<option>M.Phil</option>
+									<option>Bachelor</option>
+									<option>Master</option>
+									<option>Diploma</option>
+									<option>Honours</option>
+									<option>Doctorate</option>
+									<option>Associate</option>
+									<option>High School</option>
+									<option>Less than High School</option>
+
+								</select>
+							</p>
+							<b>College/School Name (Highest Qualification)</b>
+							<p><input placeholder="College Name" class="form-control" name="clg" oninput="this.className = ''" required></p>
+							<p><b>Works With</b>
+								<select class="form-control" name="workswith" required>
+									<option>Private Company</option>
+									<option>Government/Public Sector</option>
+									<option>Defence/Civil Services</option>
+									<option>Business/Self Employed</option>
+									<option>Not Working</option>
+								</select>
+							</p>
+							<b>Current Company Name</b>
+							<p><input placeholder="Company Name" class="form-control" name="company" oninput="this.className = ''" required></p>
+							<p><b>As</b>
+								<select class="form-control" name="aas" required>
+									<option>Banking Professional</option>
+									<option>Chartered Accountant</option>
+									<option>Company Secretary</option>
+									<option>Finance Professional</option>
+									<option>Investment Professional</option>
+									<option>Accounting Professional</option>
+									<option>Actor</option>
+									<option>Advertising Professional</option>
+									<option>Entertainment Professional</option>
+									<option>Event Manager</option>
+									<option>Journalist</option>
+									<option>Media Professional</option>
+									<option>Pulic Relations Professional</option>
+									<option>Farming</option>
+									<option>Horticulturist</option>
+									<option>Agricultural Professional(Other)</option>
+									<option>Air Hostess/Flight Attendant</option>
+									<option>Pilot/Co-Pilot</option>
+									<option>Other Airline Professional</option>
+									<option>Architect</option>
+									<option>Interior Designer</option>
+									<option>Landscape Architect</option>
+									<option>Animator</option>
+									<option>Commercial Artist</option>
+									<option>Web/UX Designer</option>
+									<option>Artist(Other)</option>
+									<option>Beautician</option>
+									<option>Fashion Designer</option>
+									<option>Hairstylist</option>
+									<option>Jewellery Designer</option>
+									<option>Designer(Other)</option>
+									<option>Customer Support/BPO/KPO Professional</option>
+									<option>IAS/IRS/IES/IFS</option>
+									<option>Indian Police Services (IPS)</option>
+									<option>Law Enforcement Employee(Other)</option>
+									<option>Airforce</option>
+									<option>Army</option>
+									<option>Navy</option>
+									<option>Defence Services(Other)</option>
+									<option>Lecturer</option>
+									<option>Professor</option>
+									<option>Research Assistant</option>
+									<option>Research Scholar</option>
+									<option>Teacher</option>
+									<option>Training Professional(Other)</option>
+									<option>Civil Engineer</option>
+									<option>Electronic/Telecom Engineer</option>
+									<option>Mechanical/Production Engineer</option>
+									<option>Non IT Engineer(Other)</option>
+									<option>Chef/Sommelier/Food Critic</option>
+									<option>Catering Professional</option>
+									<option>Hotel & Hospitality Professional(Other)</option>
+									<option>Software Developer/Programmer</option>
+									<option>Software Consultant</option>
+									<option>Hardware and Networking Professional</option>
+									<option>Software Professional(Other)</option>
+									<option>Lawyer</option>
+									<option>Legal Assistant</option>
+									<option>Legal professional(Other)</option>
+									<option>Dentist</option>
+									<option>Doctor</option>
+									<option>Medical Transcriptionist</option>
+									<option>Nurse</option>
+									<option>Pharmacist</option>
+									<option>Physician Assistant</option>
+									<option>Physiotherapist/Occupational Therapist</option>
+									<option>Psychologist</option>
+									<option>Surgean</option>
+									<option>Veterinary Doctor</option>
+									<option>Therapist(Other)</option>
+									<option>Medical & Healthcare Professional(Other)</option>
+									<option>Merchant Naval Officer</option>
+									<option>Mariner</option>
+									<option>Marketing Professional</option>
+									<option>Sales Professional</option>
+									<option>Biologist/Botanist</option>
+									<option>Physicist</option>
+									<option>Science Professional(Other)</option>
+									<option>CxO/Chairman/Director/President</option>
+									<option>VP/AVP/GM/DGM</option>
+									<option>Sr. Manager/Manager</option>
+									<option>Consultant/Supervisor/Team Leads</option>
+									<option>Team Member/Staff</option>
+									<option>Agent/Broker/Trader/Contractor</option>
+									<option>Business Owner/Enterpreneur</option>
+									<option>Politician</option>
+									<option>Social Worker/Volunteer/NGO</option>
+									<option>Sportsman</option>
+									<option>Travel/Transport Professional</option>
+									<option>Writer</option>
+									<option>Student</option>
+									<option>Retired</option>
+									<option>Not Working</option>
+								</select>
+							</p>
+							<p><b>Yearly Income</b>
+								<select class="form-control" name="income" required>
+									<option>Upto 1 Lakh Yearly</option>
+									<option>2 to 4 Lakh Yearly</option>
+									<option>4 to 7 Lakh Yearly</option>
+									<option>7 to 10 Lakh Yearly</option>
+									<option>10 to 15 Lakh Yearly</option>
+									<option>15 to 20 Lakh Yearly</option>
+									<option>20 to 30 Lakh Yearly</option>
+									<option>30 to 50 Lakh Yearly</option>
+									<option>50 to 75 Lakh Yearly</option>
+									<option>75 Lakh to 1 Crore Yearly</option>
+									<option>1 Crore And Above Yearly</option>
+								</select>
+							</p>
+						</div>
+						
+						<div class="tab">
+							<p><b>Upload Your Image</b><input class="form-control" type="file" id="myFile" name="image" required></p>
+							<p><b>About You</b><textarea class="form-control" rows="5" id="comment"  name="about" required></textarea></p>
+						</div>
+						
+						<div style="overflow:auto;">
+							<div style="float:right;">
+								<button type="button" style="color: crimson" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+								<button type="button"  style="color: crimson"  id="nextBtn" onclick="nextPrev(1)">Next</button>
+							</div>
+						</div>
+						
+						<!-- Circles which indicates the steps of the form: -->
+						<div style="text-align:center;margin-top:40px;">
+							<span class="step"></span>
+							<span class="step"></span>
+							<span class="step"></span>
+							<span class="step"></span>
+						</div>
+						
+						</form>    
+				</div>
+				<div class="col-md-3 col-sm-6"></div>
+			
+				<div class="row copyright">
+					<div class="col-md-12 text-center">	<br><br>	
+						<p>
+							<small class="block">&copy; 2021 . All Rights Reserved.</small> 
+							<small class="block">Designed by <strong>Er. Sanket Zunjakar</strong></small>
+							<small class="block">Designed by <strong>Er. Ankita Sapkal</strong></small>
+							<ul class="fh5co-social-icons">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--<p class="heart text-center"><i class="icon-heart2"></i></p>-->
+
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+	<script>
+	var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form ...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  // ... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  // ... and run a function that displays the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form... :
+  if (currentTab >= x.length) {
+    //...the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false:
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class to the current step:
+  x[n].className += " active";
+}
+	</script>
+
+</html>
+
